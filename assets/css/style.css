@@ -1,6 +1,6 @@
 /* el ROOT ES LA pseudoclase que cambia la configuracion de los elementos de la pagina
 Para declarar una variable se hace -- */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@400;700&display=swap');
 
 :root{
     
@@ -20,8 +20,9 @@ src: url(assets/font/SFProDisplay-Regular.tff);
 } */
 
 body{
-    font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 *{
@@ -49,7 +50,7 @@ body{
 
 .contenedor_formulario_inicio{
     background-color: var(--color_gris_facebook);
-    padding: 45px 50% 45px 60px;
+    padding: 15% 10%;
 }
 
 .contenedor_logo_FB_arr {
@@ -73,6 +74,7 @@ body{
 
 .inicio_FB {
     background-color: var(--color_blanco_facebook);
+    box-shadow: 0px 2px 9px #aaaaab;
     width: 396px;
     height: 350px;
     padding: 25px 0px;
@@ -108,12 +110,14 @@ body{
     background-color: var(--color_verde_hover_facebook);
 }
 .texto_azul{
-font-size: 12px; color: var(--color_azul_facebook);
+font-size: 14px; color: #1877f2;
+margin: 15px 0px 10px 0px;
 
 }
 
 .texto_azul:hover{
-font-size: 12px; color: var(--color_azul_hover_facebook);
+font-size: 14px; color: var(--color_azul_hover_facebook);
+
 }
 
 .boton_crear{
@@ -188,12 +192,22 @@ footer{
 }
 footer div {
     margin: -12px 0px -20px 0px;
-    margin 
+
 }
 
 .frase_inicio{
-    margin-top: 20px;
-    font-size:12px;
-    
+    margin-top: 25px;
+    font-size:15px;  
+}
 
+.linea{
+    border-bottom:solid 1px rgb(204, 204, 204);
+    width:85%;
+    margin: 18px 0px 18px 0px;   
+}
+
+.linea_footer{
+    border-bottom:solid 1px rgb(204, 204, 204);
+    width:100%;
+        margin: 7px 0px 0px 0px;   
 }
