@@ -1,18 +1,27 @@
 /* el ROOT ES LA pseudoclase que cambia la configuracion de los elementos de la pagina
 Para declarar una variable se hace -- */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
 
 :root{
     
-    --tipografia_facebook: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --tipografia_facebook: 'Open Sans', sans-serif;
     --color_azul_facebook:#1877f2;
     --color_azul_hover_facebook:#365899;
     --color_verde_facebook: #42b72a;
     --color_verde_hover_facebook: #36a420;
     --color_gris_facebook: #f0f2f5;
     --color_blanco_facebook:#ffffff;
-    --color_negro_facebook: black;
-    
+    --color_negro_facebook: black;    
+}
+
+/* @font-face {
+font-family: SFProDisplay-Regular;
+src: url(assets/font/SFProDisplay-Regular.tff);
+} */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 *{
@@ -48,7 +57,6 @@ Para declarar una variable se hace -- */
     display: flex;
     align-items: end;
     justify-content: center;
-
 } 
 
 .contenedor_logo_FB_aba {
@@ -59,6 +67,7 @@ Para declarar una variable se hace -- */
 
 .frases_inicio {
     padding: 0px 0px 0px 33%;
+    font-family: var(--tipografia_facebook);
 }
 
 
@@ -97,6 +106,14 @@ Para declarar una variable se hace -- */
 
 .boton_crear:hover{
     background-color: var(--color_verde_hover_facebook);
+}
+.texto_azul{
+font-size: 12px; color: var(--color_azul_facebook);
+
+}
+
+.texto_azul:hover{
+font-size: 12px; color: var(--color_azul_hover_facebook);
 }
 
 .boton_crear{
@@ -141,8 +158,6 @@ li{
     margin: 5px;
 }
 
-
-
 .lista_idiomas {
     display: flex;
     flex-direction: row;
@@ -165,4 +180,20 @@ li{
     flex-wrap: wrap;
     list-style: none;
     padding: 20px 230px 21px 230px;   
+}
+
+footer{
+    font-family:'Lucida Sans';
+    font-size: 10px; color: rgb(121, 121, 121);   
+}
+footer div {
+    margin: -12px 0px -20px 0px;
+    margin 
+}
+
+.frase_inicio{
+    margin-top: 20px;
+    font-size:12px;
+    
+
 }
