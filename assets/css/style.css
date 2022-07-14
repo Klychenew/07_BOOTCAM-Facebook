@@ -1,0 +1,168 @@
+/* el ROOT ES LA pseudoclase que cambia la configuracion de los elementos de la pagina
+Para declarar una variable se hace -- */
+
+
+:root{
+    
+    --tipografia_facebook: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --color_azul_facebook:#1877f2;
+    --color_azul_hover_facebook:#365899;
+    --color_verde_facebook: #42b72a;
+    --color_verde_hover_facebook: #36a420;
+    --color_gris_facebook: #f0f2f5;
+    --color_blanco_facebook:#ffffff;
+    --color_negro_facebook: black;
+    
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor_inicio_FB {
+    height: 720px;
+    background-color: var(--color_gris_facebook);
+    display: grid;
+    /* grid-template-columns: 50% 50%;  ESTA FORMA SIRVE PARA DIVIDIR LA PAGINA EN DOS, con la siguiente 
+    linea de codigo hace lo mismo pero es mas profesional*/
+    /* grid-template-columns: 50% 50%; */
+    grid-template-columns: repeat(2, 50%);
+    /* align-content: center; */
+}
+
+.contenedor_logoYfrase{
+    display: grid;
+    justify-content: center;
+
+}
+
+.contenedor_formulario_inicio{
+    background-color: var(--color_gris_facebook);
+    padding: 45px 50% 45px 60px;
+}
+
+.contenedor_logo_FB_arr {
+    background-color: var(--color_gris_facebook);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+} 
+
+.contenedor_logo_FB_aba {
+    background-color: var(--color_gris_facebook);
+    display: grid;
+    align-items: start;
+}  
+
+.frases_inicio {
+    padding: 0px 0px 0px 33%;
+}
+
+
+.inicio_FB {
+    background-color: var(--color_blanco_facebook);
+    width: 396px;
+    height: 350px;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.boton_inicio{
+    display: flex; 
+    flex-direction: row;   
+    width: 364px;
+    height: 48px;
+    display: inline-block;
+    font-size: 16px; color: var(--color_blanco_facebook);
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    background: var(--color_azul_facebook);
+    transition: all 200ms;
+}
+
+.boton_inicio:hover{
+    background-color: var(--color_azul_hover_facebook);
+}
+
+.boton_crear:hover{
+    background-color: var(--color_verde_hover_facebook);
+}
+
+.boton_crear{
+    display: flex; 
+    flex-direction: row;   
+    width: 190.8px;
+    height: 48px;
+    display: inline-block;
+    font-size: 16px; color: var(--color_blanco_facebook);
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color_verde_facebook);
+    transition: all 200ms;
+}
+
+
+.caja_formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 364px;
+    height: 52px;
+    font-size: 17px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: solid 1px; color: #ccd0d5;
+    border-radius: 6px;
+    background-color: var(--color_blanco_facebook);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+li{
+    margin: 5px;
+}
+
+
+
+.lista_idiomas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 20px 230px 21px 230px;
+}
+
+.lista_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 20px 230px 20px 230px;  
+}
+
+.lista_copy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 20px 230px 21px 230px;   
+}
