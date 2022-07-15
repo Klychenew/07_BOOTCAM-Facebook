@@ -4,7 +4,7 @@ Para declarar una variable se hace -- */
 
 :root{
     
-    --tipografia_facebook: 'Open Sans', sans-serif;
+    --tipografia_facebook: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
     --color_azul_facebook:#1877f2;
     --color_azul_hover_facebook:#365899;
     --color_verde_facebook: #42b72a;
@@ -14,21 +14,22 @@ Para declarar una variable se hace -- */
     --color_negro_facebook: black;    
 }
 
-/* @font-face {
-font-family: SFProDisplay-Regular;
-src: url(assets/font/SFProDisplay-Regular.tff);
-} */
+@font-face {
+font-family: "fuenteFacebook";
+src: url("../font/SFProDisplay-Regular.tff");
+}
+/* con @font.face se agrega una tipografia espefica o personalizada*/
 
 body{
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    
+    font-family: 'fuenteFacebook';
+    /* font-family: 'Open Sans', sans-serif;*/
 }
 
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: var(--tipografia_facebook);
 }
 
 .contenedor_inicio_FB {
@@ -198,6 +199,10 @@ footer div {
 .frase_inicio{
     margin-top: 25px;
     font-size:15px;  
+}
+
+.frase_inicio p span{
+    font-weight: bold;
 }
 
 .linea{
